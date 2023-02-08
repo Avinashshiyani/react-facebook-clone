@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Form() {
   return (
@@ -15,7 +16,11 @@ function Form() {
         <div className='h-0.5 bg-gray-200 rounded-full'></div>
         <div className='grid justify-center text-lg space-y-3'>
           <input type="button" className='p-3 bg-green-500 text-white rounded-lg' value="Create New Account" />
-          <input type="button" className='p-3 border-2 border-blue-600 rounded-lg' value="Skip >>" />
+
+          <Link to="/dashboard">
+            <input type="button" className='p-3 border-2 border-blue-600 rounded-lg cursor-pointer px-16' value="Skip >>" />
+          </Link>
+
         </div>
 
       </div>
